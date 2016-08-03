@@ -40,11 +40,6 @@
 							<templatePath>${basedir}/templates/strapdown.html.hbs</templatePath>
 							<outputPath>${basedir}/generated/document.html</outputPath>
 							<swaggerDirectory>generated/swagger-ui</swaggerDirectory>
-							<securityDefinitions>
-								<securityDefinition>
-									<json>/securityDefinitions.json</json>
-								</securityDefinition>
-							</securityDefinitions>
 						</apiSource>
 
 					</apiSources>
@@ -71,17 +66,14 @@
 	</build>
 
 	<dependencies>
-
+	
+		<!-- springboot -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
-
+		
+		<!-- resteasy -->
 		<dependency>
 			<groupId>com.paypal.springboot</groupId>
 			<artifactId>resteasy-spring-boot-starter</artifactId>
