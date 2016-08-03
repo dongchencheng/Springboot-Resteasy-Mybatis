@@ -23,6 +23,7 @@
 					<apiSources>
 						<apiSource>
 							<springmvc>false</springmvc>
+							<!-- location为controller的包路径 -->
 							<locations>
 								controller
 							</locations>
@@ -34,11 +35,12 @@
 								<version>v1</version>
 								<description>我的测试</description>
 							</info>
-							<!-- Support classpath or file absolute path here. 1) classpath e.g: 
-								"classpath:/markdown.hbs", "classpath:/templates/hello.html" 2) file e.g: 
-								"${basedir}/src/main/resources/markdown.hbs", "${basedir}/src/main/resources/template/hello.html" -->
+							<!-- templatePath为模板文件，可从https://github.com/swagger-maven-plugin/swagger-maven-example/tree/master/templates下载 -->
 							<templatePath>${basedir}/templates/strapdown.html.hbs</templatePath>
+							
+							<!-- document.html文件的生成路径 -->
 							<outputPath>${basedir}/generated/document.html</outputPath>
+							<!-- swagger.json文件的生成路径 -->
 							<swaggerDirectory>generated</swaggerDirectory>
 						</apiSource>
 
