@@ -5,8 +5,7 @@
     "version" : "v1",
     "title" : "宠物信息"
   },
-  "host" : "localhost:8080",
-  "basePath" : "/api",
+  "host" : "127.0.0.1:8080",
   "tags" : [ {
     "name" : "宠物信息相关api"
   } ],

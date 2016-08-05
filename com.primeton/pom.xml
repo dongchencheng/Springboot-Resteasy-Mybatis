@@ -28,8 +28,7 @@
 								controller
 							</locations>
 							<schemes>http,https</schemes>
-							<host>localhost:8080</host>
-							<basePath>/api</basePath>
+							<host>127.0.0.1:8080</host>
 							<info>
 								<title>宠物信息</title>
 								<version>v1</version>
