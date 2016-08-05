@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ImportResource(value = "applicationContext-mybatis.xml")
 @SpringBootApplication
 @EnableTransactionManagement
-@ComponentScan("controller")
+@ComponentScan("controller,filter")
 public class Application {
 	
 	public static void main(String[] args) {
