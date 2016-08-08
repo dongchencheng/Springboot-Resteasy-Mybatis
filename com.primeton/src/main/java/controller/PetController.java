@@ -56,7 +56,7 @@ public class PetController {
 
 	@POST
 	@Path(value = "/")
-	@Produces(value = { "application/json" })
+	@Produces(value = { "text/html" })
 	@ApiOperation("添加宠物信息")
 	@ApiResponses({ @ApiResponse(code = 400, message = "请求参数没填好"),
 		@ApiResponse(code = 404, message = "请求路径没有或页面跳转路径不对") })
@@ -65,9 +65,9 @@ public class PetController {
 	}
 
 	@PUT
-	@Produces(value = { "application/json" })
 	@Path(value = "/")
 	@ApiOperation("更新宠物信息")
+	@Produces(value = { "text/html" })
 	@ApiResponses({ @ApiResponse(code = 400, message = "请求参数没填好"),
 		@ApiResponse(code = 404, message = "请求路径没有或页面跳转路径不对") })
 	public String updatePet(PetDto dto) {
@@ -75,7 +75,7 @@ public class PetController {
 	}
 
 	@DELETE
-	@Produces(value = { "application/json" })
+	@Produces(value = { "text/html" })
 	@Path(value = "/{id}")
 	@ApiOperation("通过ID删除宠物信息")
 	@ApiResponses({ @ApiResponse(code = 400, message = "请求参数没填好"),

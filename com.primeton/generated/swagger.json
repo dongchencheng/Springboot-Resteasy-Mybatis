@@ -17,7 +17,7 @@
         "summary" : "添加宠物信息",
         "description" : "",
         "operationId" : "insertPet",
-        "produces" : [ "application/json" ],
+        "produces" : [ "text/html" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -46,7 +46,7 @@
         "summary" : "更新宠物信息",
         "description" : "",
         "operationId" : "updatePet",
-        "produces" : [ "application/json" ],
+        "produces" : [ "text/html" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -128,7 +128,7 @@
         "summary" : "通过ID删除宠物信息",
         "description" : "",
         "operationId" : "deletePet",
-        "produces" : [ "application/json" ],
+        "produces" : [ "text/html" ],
         "parameters" : [ {
           "name" : "id",
           "in" : "path",
